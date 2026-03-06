@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Siempre cerca</title>
+
+<style>
+
+body{
+margin:0;
+font-family:"Georgia", serif;
+background:#f7efe9;
+color:#5a4a42;
+overflow-x:hidden;
+}
+
+/* secciones */
+
+.section{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+padding:40px 25px;
+text-align:center;
+opacity:0;
+transform:translateY(40px);
+transition:all 1.5s ease;
+}
+
+.section.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* portada */
+
+.hero{
+background:linear-gradient(#f7efe9,#f1d7d2);
+}
+
+.hero h1{
+font-size:36px;
+color:#8b5e5e;
+}
+
+.hero p{
+font-style:italic;
+opacity:0.8;
+}
+
+/* mensajes */
+
+.message{
+background:#fff7f3;
+}
+
+.message p{
+max-width:500px;
+line-height:1.9;
+font-size:19px;
+}
+
+/* recuerdos */
+
+.memories{
+background:#f3e4df;
+}
+
+.memory{
+background:white;
+padding:20px;
+border-radius:12px;
+margin:20px 0;
+max-width:380px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+animation:floatCard 6s ease-in-out infinite;
+}
+
+@keyframes floatCard{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-8px);}
+100%{transform:translateY(0px);}
+}
+
+/* fotos */
+
+.photo{
+width:90%;
+max-width:360px;
+border-radius:12px;
+margin:20px 0;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+transition:transform 0.6s ease;
+}
+
+.photo:hover{
+transform:scale(1.05);
+}
+
+/* final */
+
+.final{
+background:linear-gradient(#f1d7d2,#f7efe9);
+}
+
+.final h2{
+font-size:30px;
+color:#8b5e5e;
+}
+
+/* corazones */
+
+.heart{
+position:fixed;
+bottom:-20px;
+color:#e3a7a7;
+opacity:0.7;
+animation:float 8s linear infinite;
+}
+
+@keyframes float{
+from{
+transform:translateY(0);
+opacity:0.8;
+}
+to{
+transform:translateY(-120vh);
+opacity:0;
+}
+}
+
+.polaroid{
+background:white;
+padding:15px 15px 40px 15px;
+border-radius:4px;
+box-shadow:0 12px 25px rgba(0,0,0,0.2);
+max-width:260px;
+margin:30px auto;
+transform:rotate(-3deg);
+animation:floatCard 6s ease-in-out infinite;
+}
+
+.polaroid img{
+width:100%;
+border-radius:2px;
+}
+
+.caption{
+margin-top:10px;
+font-family:cursive;
+color:#777;
+font-size:14px;
+}
+
+.farewell{
+max-width:520px;
+line-height:1.9;
+font-size:19px;
+margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- portada -->
+
+<section class="section hero">
+
+<h1>Aunque estemos lejos</h1>
+
+<p>hay algo que siempre nos mantiene cerca...</p>
+
+</section>
+
+
+<!-- mensaje -->
+
+<section class="section message">
+
+<h2>Un pensamiento para ti</h2>
+
+<p>
+Hay días en los que la distancia pesa un poco más,
+en los que uno quisiera acortar los kilómetros
+con un abrazo.
+
+Pero también hay días en los que basta un recuerdo,
+una sonrisa compartida,
+o una simple conversación,
+para sentir que en realidad
+nunca estamos tan lejos.
+</p>
+
+</section>
+
+
+<!-- recuerdos -->
+
+<section class="section memories">
+
+<h2>Pequeños recuerdos</h2>
+
+<div class="memory">
+A veces cierro los ojos
+y recuerdo esos momentos contigo.
+Es curioso cómo un recuerdo
+puede hacer que el corazón
+sonría en silencio.
+</div>
+
+<div class="memory">
+La distancia puede separar caminos,
+pero no los sentimientos
+que crecen entre dos personas.
+</div>
+
+<div class="memory">
+Hay personas que,
+aunque estén lejos,
+siguen ocupando
+el lugar más cercano en el corazón.
+</div>
+
+</section>
+
+
+<!-- fotos -->
+
+<section class="section">
+
+<h2>Nuestros momentos</h2>
+
+<img class="photo" src="https://picsum.photos/400/500?random=21">
+
+<img class="photo" src="https://picsum.photos/400/500?random=22">
+
+</section>
+
+
+<!-- final -->
+
+<section class="section final">
+
+<h2>Te extraño</h2>
+
+<p>
+Pero también me gusta saber  
+que cada día que pasa  
+es un día menos  
+para volver a encontrarnos.
+</p>
+
+</section>
+
+<section class="section final">
+
+<h2>Te extraño</h2>
+
+<div class="polaroid">
+<img src="https://picsum.photos/400/500?random=40">
+<div class="caption">Un recuerdo contigo</div>
+</div>
+
+<p class="farewell">
+A veces la distancia hace que los días se sientan
+un poco más largos,  
+pero también me recuerda lo mucho que significas para mí.
+
+Guardo cada recuerdo contigo
+como si fuera un pequeño tesoro.
+
+Y aunque hoy los kilómetros nos separen,
+mi corazón sigue encontrando el camino hacia ti.
+
+Porque hay personas que no solo pasan por la vida…
+sino que se quedan viviendo dentro de ella.
+
+Y tú eres una de esas personas.
+
+Te quiero más de lo que estas palabras pueden explicar,
+y en algún momento,
+cuando el destino vuelva a cruzar nuestros caminos,
+
+espero poder encontrarte otra vez.
+</p>
+
+</section>
+  
+<script>
+
+/* animación al hacer scroll */
+
+const sections=document.querySelectorAll(".section");
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+});
+
+sections.forEach(sec=>{
+observer.observe(sec);
+});
+
+
+/* corazones flotando */
+
+function heart(){
+
+const h=document.createElement("div");
+
+h.className="heart";
+
+h.innerHTML="❤";
+
+h.style.left=Math.random()*100+"vw";
+
+h.style.fontSize=(Math.random()*18+10)+"px";
+
+h.style.animationDuration=(Math.random()*3+6)+"s";
+
+document.body.appendChild(h);
+
+setTimeout(()=>{
+h.remove();
+},8000);
+
+}
+
+setInterval(heart,1000);
+
+</script>
+
+</body>
+</html>
